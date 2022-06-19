@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>TUCOURE-LP_demo</title>
+    <meta name="description" content="説明です。" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <script
+      src="https://kit.fontawesome.com/30c76fcb1e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Adobe fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/ujz8ksg.css" />
+    <!-- aosライブラリの読み込み -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
+    <script
+      type=" text/javascript"
+      src="./js/jquery-migrate-1.4.1.min.js"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="ly_inner">
+          <div class="bl_logo">
+            <img
+              class="el_logoMark"
+              src="img/logo_tukuru.png"
+              alt="TUCOUREのロゴマーク"
+            />
+            <img
+              class="el_logo"
+              src="img/logo_512x256_w.png"
+              alt="TUCOUREのロゴタイプ"
+            />
+          </div>
+        </div>
+      </header>
+      <div class="ly_fv">
+        <div class="ly_inner">
+          <img
+            class="el_fv_copy"
+            src="img/わたしのむねのなかをカタチに。.png"
+            alt="メインコピー"
+          />
+        </div>
+        <div class="bl_fv_wrapper">
+          <h1>
+            欲しかったアイテムが作れる。<br
+              class="hp_br-tb"
+            />買える。シェアできるアプリ。<br />
+            「<img
+              src="img/logo_512x256_w.png"
+              style="vertical-align: middle"
+              class="el_logo el_logo__md"
+            />（ツクール）」
+          </h1>
+          <div class="bl_banner_container">
+            <a href="#" class="el_banner">
+              <img src="img/appstore.png" alt="AppStoreバナー" />
+            </a>
+            <a href="#" class="el_banner">
+              <img src="img/googleplay.png" alt="GooglePlayバナー" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <section class="ly_section hp_ptLg hp_pbLg" id="concept">
+        <div class="ly_inner">
+          <div class="bl_section_wrapper hp_flex hp_jcsa hp_aic">
+            <img
+              src="/img/concept_title.png"
+              class="el_section_ttl"
+              data-aos="fade-right"
+              data-aos-anchor-placement="top-bottom"
+              alt="コンセプトセクションのタイトル"
+            />
+            <div class="bl_section_body">
+              <figure
+                class="bl_section_img hp_tac"
+                data-aos="zoom-in"
+                data-aos-anchor-placement="top-bottom"
+              >
+                <img src="img/triangle.png" alt="トライアングルの図" />
+              </figure>
+              <p
+                class="bl_section_txt"
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+              >
+                プチプラなファストファッションって可愛いし<br />安くて気軽に買えるから大好き。<br />
+                <br />
+                だけど、毎シーズン買い換える度<br /><span class="hp_lg"
+                  >「本当にこれでいいのかな？」</span
+                ><br />って思ってる自分がいる。<br />
+                そろそろ、このスタイルから卒業して心の底から「欲しい！」と思ったものを
+                永く使いたい。<br />どうせなら、作ってみたい。<br />
+                …出来たら<br class="hp_br-sp" /><span class="hp_lg"
+                  >ブランドとして発信</span
+                >したい。<br />
+                <br />
+                そんな願いを叶えるために、<img
+                  src="img/TUCOURE_logo__w.png"
+                  class="el_logo el_logo__sm"
+                />は生まれました。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ly_section hp_ptLg hp_pbLg" id="about">
+        <div class="ly_inner">
+          <div class="bl_section_wrapper hp_flex hp_aic">
+            <div class="bl_section_imgWrapper hp_tac">
+              <div class="icon_unit">
+                <img src="img/app_aicon.png" alt="アプリアイコンの画像" />
+                <img
+                  class="bubble"
+                  id="bubble1"
+                  src="./img/吹き出し1.png"
+                  alt="吹き出し1"
+                  data-aos="zoom-in"
+                  data-aos-anchor-placement="middle-bottom"
+                  data-aos-delay="200"
+                />
+                <img
+                  class="bubble"
+                  id="bubble2"
+                  src="./img/吹き出し2.png"
+                  alt="吹き出し2"
+                  data-aos="zoom-in"
+                  data-aos-anchor-placement="middle-bottom"
+                  data-aos-delay="250"
+                />
+                <img
+                  class="bubble"
+                  id="bubble3"
+                  src="./img/吹き出し3.png"
+                  alt="吹き出し3"
+                  data-aos="zoom-in"
+                  data-aos-anchor-placement="middle-bottom"
+                  data-aos-delay="300"
+                />
+                <img
+                  class="bubble"
+                  id="bubble4"
+                  src="./img/吹き出し4.png"
+                  alt="吹き出し4"
+                  data-aos="zoom-in"
+                  data-aos-anchor-placement="middle-bottom"
+                  data-aos-delay="200"
+                />
+                <img
+                  class="bubble"
+                  id="bubble5"
+                  src="./img/吹き出し5.png"
+                  alt="吹き出し5"
+                  data-aos="zoom-in"
+                  data-aos-anchor-placement="middle-bottom"
+                  data-aos-delay="250"
+                />
+                <img
+                  class="bubble"
+                  id="bubble6"
+                  src="./img/吹き出し6.png"
+                  alt="吹き出し6"
+                  data-aos="zoom-in"
+                  data-aos-anchor-placement="middle-bottom"
+                  data-aos-delay="300"
+                />
+              </div>
+            </div>
+            <div class="bl_section_body">
+              <img
+                src="/img/TUCOUREって？.png"
+                class="el_section_ttl hp_mbSm hp_centering"
+                data-aos="fade-left"
+                data-aos-anchor-placement="top-bottom"
+                alt="アバウトセクションのタイトル"
+              />
+              <h3
+                class="bl_section_header hp_pt50 hp_pb50"
+                data-aos="fade-left"
+                data-aos-anchor-placement="top-bottom"
+              >
+                「欲しい人」と「作りたい人」<br
+                  class="hp_br-sp"
+                />が繋がる<br />
+                <span class="strong"
+                  >マッチング<br class="hp_br-sp" />プラットフォーム !</span
+                >
+              </h3>
+              <p
+                class="bl_section_txt"
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+              >
+                <img
+                  src="img/TUCOURE_logo__w.png"
+                  class="el_logo el_logo__sm"
+                />（ツクール）は<span class="hp_marker"
+                  >国内初オーダーメイドマーケットアプリ。</span
+                ><br />
+                アプリでオーダーするだけで縫製職人さんとオリジナルアイテムが作れます。<br />
+                <br />
+                制作したアイテムはSNSで発信したり、販売することができ、まさに<span
+                  class="hp_marker"
+                  >自分のブランドを持つ</span
+                >ことができます。<br />
+                <span class="hp_marker">有名インフルエンサーも多数出品</span
+                >しているので、ここだけでしか手に入らないアイテムも…！<br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ly_section hp_ptLg hp_pbLg" id="feature">
+        <div class="ly_inner">
+          <img
+            src="/img/TUCOUREの特徴？.png"
+            class="el_section_ttl hp_mbSm hp_centering"
+            data-aos="fade-down"
+            data-aos-anchor-placement="top-bottom"
+            alt="フューチャーセクションのタイトル"
+          />
+          <p
+            class="el_section_txt hp_tac hp_mbMd"
+            data-aos="fade-down"
+            data-aos-anchor-placement="top-bottom"
+          >
+            様々なバックアップで<br class="hp_br-sp" />あなたを応援します。
+          </p>
+          <div class="ly_section_container hp_aic hp_jcsa hp_column_sp hp_mbLg">
+            <div
+              class="bl_section_body"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+            >
+              <h3 class="bl_section_header">エールシステム</h3>
+              <p class="bl_section_txt">
+                クラウドファンディングの様に応援したい人へエールを送れる！<br />
+                受け取った方は資金をもとに、アイテムを製作することができるので<span
+                  class="hp_marker"
+                  ><br />実質0円で制作も出来ちゃう！</span
+                ><br />
+                エールを送った方は「お返し」が受け取れます！<br />
+              </p>
+            </div>
+            <figure
+              class="bl_section_imgWrapper"
+              data-aos="zoom-in"
+              data-aos-anchor-placement="top-bottom"
+            >
+              <img
+                src="./img/feature_img1.png"
+                alt="エールを受け取っているスマホ画面"
+                style="width: 230px"
+              />
+            </figure>
+          </div>
+          <div
+            class="ly_section_container hp_reverse hp_aic hp_jcsa hp_column_sp hp_mbLg"
+          >
+            <div
+              class="bl_section_body"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+            >
+              <h3 class="bl_section_header">
+                バーチャルフィッティング<br class="hp_br-tb" />機能
+              </h3>
+              <p class="bl_section_txt">
+                今まで手間だったメジャーでの採寸は不必要！<br />最新AI機能で、<span
+                  class="hp_marker"
+                  >写真を撮るだけ</span
+                >でたった10秒で採寸完了！<br />
+                自分のサイズも即座に分かるので、オーダーもかなりスムーズに！<br />
+              </p>
+            </div>
+            <figure
+              class="bl_section_imgWrapper"
+              data-aos="zoom-in"
+              data-aos-anchor-placement="top-bottom"
+            >
+              <img
+                src="./img/feature_img2.png"
+                alt="バーチャルフィッティング画面のスマホ"
+                style="width: 230px"
+              />
+            </figure>
+          </div>
+          <div class="ly_section_container hp_aic hp_jcsa hp_column_sp hp_mbLg">
+            <div
+              class="bl_section_body"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+            >
+              <h3 class="bl_section_header">
+                古着・ヴィンテージ品の<br class="hp_br-tb" />出品・購入
+              </h3>
+              <p class="bl_section_txt">
+                古着はもちろん、<span class="hp_marker"
+                  >使わなくなった小物やヴィンテージ品が出品できます。</span
+                ><br />捨てずに、新たな持ち主にお洒落に使いこなしてもらいましょう！<br />
+                購入者側は欲しかったアイテムがお手頃に手に入るチャンス！<br />
+              </p>
+            </div>
+            <figure
+              class="bl_section_imgWrapper"
+              data-aos="zoom-in"
+              data-aos-anchor-placement="top-bottom"
+            >
+              <img
+                src="./img/feature_img3.png"
+                alt="商品が並んだ画面のスマホ"
+                style="width: 230px"
+              />
+            </figure>
+          </div>
+          <div
+            class="ly_section_container hp_reverse hp_aic hp_jcsa hp_column_sp hp_mbLg"
+          >
+            <div
+              class="bl_section_body"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+            >
+              <h3 class="bl_section_header">イベントも盛りだくさん！</h3>
+              <p class="bl_section_txt">
+                季節毎にイベントを随時開催中！<br />
+                テーマに合った自慢のコーディネートを投稿しちゃいましょう！<br />
+                企業様とのコラボ企画で豪華特典が当たるチャンス！<br />
+                <span class="hp_marker"
+                  >あなたのブランドをバックアップすることも…？</span
+                >
+              </p>
+            </div>
+            <figure
+              class="bl_section_imgWrapper"
+              data-aos="zoom-in"
+              data-aos-anchor-placement="top-bottom"
+            >
+              <img
+                src="./img/event_banner.png"
+                alt="イベント画像"
+                width="350px"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section class="ly_section hp_ptLg hp_pbLg" id="order">
+        <div class="ly_inner">
+          <img
+            src="/img/いざ、オーダー.png"
+            class="el_section_ttl hp_mbSm hp_centering"
+            data-aos="fade-down"
+            data-aos-anchor-placement="top-bottom"
+            alt="オーダーセクションのタイトル"
+          />
+          <p
+            class="bl_section_txt hp_tac"
+            data-aos="fade-down"
+            data-aos-anchor-placement="top-bottom"
+          >
+            3ステップで<br class="hp_br-sp" />秘めていたイメージををカタチに。
+          </p>
+          <!-- 3カラム -->
+          <div class="bl_cardUnit hp_flex hp_mtLg hp_jcsb bl_cardUnit__col3">
+            <div
+              class="bl_card"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-anchor-placement="top-bottom"
+            >
+              <figure class="bl_card_imgWrapper">
+                <img
+                  src="img/001b.png"
+                  alt="スマホの作成画面"
+                  style="width: 140px"
+                />
+              </figure>
+              <div class="bl_card_body hp_tac">
+                <h3 class="bl_card_ttl">
+                  「作る」をタップ<span class="number">01</span>
+                </h3>
+                <p class="bl_card_txt hp_ts">
+                  まずは「作る」ボタンをタップ！<br />あなだだけのファッションブランド工場がスタート！
+                </p>
+              </div>
+              <!-- ./bl_card_body -->
+            </div>
+            <div
+              class="bl_card"
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-anchor-placement="top-bottom"
+            >
+              <figure class="bl_card_imgWrapper">
+                <img
+                  src="img/sm-order.png"
+                  alt="スマホのオーダー画面"
+                  style="width: 240px"
+                />
+              </figure>
+              <div class="bl_card_body hp_tac">
+                <h3 class="bl_card_ttl">
+                  セミorフルオーダー<span class="number">02</span>
+                </h3>
+                <p class="bl_card_txt hp_ts">
+                  セミオーダーで簡単アレンジ！<br />もっとこだわりたい方はフルオーダー。<br
+                    class="hp_br-tb"
+                  />経験豊富な作り手さんと一緒に制作。<br />
+                  <span class="hp_marker">専門知識が無くても安心。</span>
+                </p>
+              </div>
+              <!-- ./bl_card_body -->
+            </div>
+            <!-- /.bl_card -->
+            <div
+              class="bl_card"
+              data-aos="fade-up"
+              data-aos-delay="700"
+              data-aos-anchor-placement="top-bottom"
+            >
+              <figure class="bl_card_imgWrapper">
+                <img
+                  src="img/s3-001b.png"
+                  alt="スマホの完成画面"
+                  style="width: 140px"
+                />
+              </figure>
+              <div class="bl_card_body hp_tac">
+                <h3 class="bl_card_ttl">
+                  オーダー完了！ <span class="number">03</span>
+                </h3>
+                <p class="bl_card_txt hp_ts">
+                  オーダーしたあとは到着を待つだけ！<br />自分のアイディアがカタチになる瞬間…！
+                </p>
+              </div>
+              <!-- ./bl_card_body -->
+            </div>
+            <!-- /.bl_card -->
+          </div>
+          <!-- /.bl_cardUnit-->
+        </div>
+      </section>
+      <section class="ly_section hp_ptLg hp_pbLg" id="detail">
+        <div class="ly_inner">
+          <img
+            src="/img/detail_title.png"
+            class="el_section_ttl hp_mbSm hp_centering"
+            data-aos="fade-down"
+            data-aos-anchor-placement="top-bottom"
+            alt="ディティールセクションのタイトル"
+          />
+          <p
+            class="el_section_txt hp_tac hp_mbMd"
+            data-aos="fade-down"
+            data-aos-anchor-placement="top-bottom"
+          >
+            作り手さんと最高のものを<br class="hp_br-tb" />作って頂くために。<br
+              class="hp_br-sp"
+            />その仕組みがTUCOUREにはあります。
+          </p>
+          <div class="bl_cardUnit bl_cardUnit__col3">
+            <div
+              class="bl_card"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-anchor-placement="top-bottom"
+            >
+              <figure class="bl_card_imgWrapper">
+                <img src="img/Icon ionic-ios-people.png" alt="人々のイラスト" />
+              </figure>
+              <div class="bl_card_body">
+                <h3 class="bl_card_ttl">縫製のプロ</h3>
+                <p class="bl_card_subTtl">CRAFTSMAN</p>
+                <p class="bl_card_txt">
+                  一緒にタッグを組む作り手さんは、審査に通過した信頼と実績のある縫製職人（工場）さん。専門的な知識が無くても安心。
+                </p>
+              </div>
+            </div>
+            <div
+              class="bl_card"
+              data-aos="fade-up"
+              data-aos-delay="400"
+              data-aos-anchor-placement="top-bottom"
+            >
+              <figure class="bl_card_imgWrapper">
+                <img
+                  src="img/Icon awesome-handshake.png"
+                  alt="握手するイラスト"
+                />
+              </figure>
+              <div class="bl_card_body">
+                <h3 class="bl_card_ttl">ベストマッチング</h3>
+                <p class="bl_card_subTtl">MATCHING</p>
+                <p class="bl_card_txt">
+                  スレッド形式で依頼をアップして、内容に興味を持った作り手さんが応募をすれば依頼成立！だから、マッチングの満足度◎
+                </p>
+              </div>
+              <!-- ./bl_card_body -->
+            </div>
+            <div
+              class="bl_card"
+              data-aos="fade-up"
+              data-aos-delay="600"
+              data-aos-anchor-placement="top-bottom"
+            >
+              <figure class="bl_card_imgWrapper">
+                <img
+                  src="img/Icon feather-send.png"
+                  alt="旗のイラスト"
+                  style="width: 70px"
+                />
+              </figure>
+              <div class="bl_card_body">
+                <h3 class="bl_card_ttl">直接オファー</h3>
+                <p class="bl_card_subTtl">OFFER</p>
+                <p class="bl_card_txt">
+                  作り手さんのプロフィールページで制作実績や得意分野を確認できます。
+                  「この人に頼みたい！」となれば直接依頼することができます。
+                </p>
+              </div>
+              <!-- ./bl_card_body -->
+            </div>
+            <div
+              class="bl_card"
+              data-aos="fade-up"
+              data-aos-delay="800"
+              data-aos-anchor-placement="top-bottom"
+            >
+              <figure class="bl_card_imgWrapper">
+                <img
+                  src="img/Icon ionic-md-chatbubbles.png"
+                  alt="チャットバブルイラスト"
+                  style="width: 70px"
+                />
+              </figure>
+              <div class="bl_card_body">
+                <h3 class="bl_card_ttl">チャット機能</h3>
+                <p class="bl_card_subTtl">CHAT SYSTEM</p>
+                <p class="bl_card_txt">
+                  細かいこだわりも手軽なチャット形式でやり取りが可能！最高のものを作るために、遠慮なく相談しちゃいましょう！
+                </p>
+              </div>
+              <!-- ./bl_card_body -->
+            </div>
+            <div
+              class="bl_card"
+              data-aos="fade-up"
+              data-aos-delay="1000"
+              data-aos-anchor-placement="top-bottom"
+            >
+              <figure class="bl_card_imgWrapper">
+                <img
+                  src="img/Icon awesome-camera-retro.png"
+                  alt="カメラのイラスト"
+                  style="width: 70px"
+                />
+              </figure>
+              <div class="bl_card_body">
+                <h3 class="bl_card_ttl">画像追加機能</h3>
+                <p class="bl_card_subTtl">IMAGE</p>
+                <p class="bl_card_txt">
+                  作りたいアイテムの写真やイラストをアップ可能！メッセージで伝わりにくいイメージもきちんと共有できます。
+                </p>
+              </div>
+              <!-- ./bl_card_body -->
+            </div>
+            <div
+              class="bl_card"
+              data-aos="fade-up"
+              data-aos-delay="1200"
+              data-aos-anchor-placement="top-bottom"
+            >
+              <figure class="bl_card_imgWrapper">
+                <img
+                  src="img/Icon map-clothing-store.png"
+                  alt="Tシャツのイラスト"
+                />
+              </figure>
+              <div class="bl_card_body">
+                <h3 class="bl_card_ttl">素材持ち込み</h3>
+                <p class="bl_card_subTtl">MATERIAL</p>
+                <p class="bl_card_txt">
+                  「自分が持ってる生地を使って欲しい！」というご要望もOK。持ち込みで製作コストが下がることもあります。
+                </p>
+              </div>
+              <!-- ./bl_card_body -->
+            </div>
+          </div>
+          <!-- /.bl_cardUnit-->
+        </div>
+      </section>
+      <section class="ly_section hp_ptLg hp_pbLg" id="voice">
+        <div class="ly_inner">
+          <img
+            src="/img/感想が聞きたい！.png"
+            class="el_section_ttl hp_mbSm hp_centering"
+            data-aos="fade-down"
+            data-aos-anchor-placement="top-bottom"
+            alt="ボイスセクションのタイトル"
+          />
+          <p
+            class="el_section_txt hp_tac"
+            data-aos="fade-down"
+            data-aos-anchor-placement="top-bottom"
+          >
+            実際に利用されている方々の<br
+              class="hp_br-sp"
+            />感想をご紹介します。
+          </p>
+          <div class="bl_cardWrapper hp_mtMd">
+            <div
+              class="bl_card hp_flex hp_mbMd"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="200"
+              data-aos-offset="0"
+            >
+              <div class="bl_card_body">
+                <h3 class="bl_card_ttl">
+                  これだ！と思える洋服がなかったんです…<br />だから、自分で作っちゃいました！
+                </h3>
+                <figure class="bl_card_imgWrapper">
+                  <img src="img/顔写真1.png" alt="コードが並んでいる画像" />
+                </figure>
+                <p class="bl_card_txt hp_clear">
+                  <span>こ</span
+                  >だわりが人一倍強い方なので、既成のもので納得いくようなデザインの服に出会えなかったんです。<br
+                    class="hp_br-pc"
+                  />そんなときこんなアプリがあるんだ！と知って。全くの未経験でしたが早速フルオーダー。作り手さんに助けて頂きながら制作し、結果大満足の仕上がりです！<br />
+                  とても思い入れのあるアイテムなので大切に永く愛用します。
+                </p>
+                <p class="bl_card_detail">kanaさん（21）</p>
+              </div>
+              <div class="blank"></div>
+              <!-- ./bl_card_body -->
+            </div>
+            <div
+              class="bl_card hp_flex hp_reverse hp_mbMd"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="200"
+              data-aos-offset="0"
+            >
+              <div class="bl_card_body">
+                <h3 class="bl_card_ttl">本当に必要な人に使って欲しいから。</h3>
+                <figure class="bl_card_imgWrapper">
+                  <img src="img/顔写真2.png" alt="コードが並んでいる画像" />
+                </figure>
+                <p class="bl_card_txt hp_clear">
+                  <span>使</span
+                  >わなくなったコートを出品しました。他フリマアプリでの出品も考えましたが、「せっかくなら大切に使ってくれる人に譲りたいな」と思っていたら「TUCOUREはファッション感度の高い人たちが多い」と聞き、出品。
+                  <br />すぐに反応頂き、システムもわかりやすく取引完了までスムーズでした。購入した方も、大変喜ばれたみたいでこちらを利用して正解でした。
+                </p>
+                <p class="bl_card_detail">シュンさん（23）</p>
+              </div>
+              <div class="blank"></div>
+              <!-- ./bl_card_body -->
+            </div>
+            <div
+              class="bl_card hp_flex hp_mbMd"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="200"
+              data-aos-offset="0"
+            >
+              <div class="bl_card_body">
+                <h3 class="bl_card_ttl">夢の後押しをしてくれています。</h3>
+                <figure class="bl_card_imgWrapper">
+                  <img src="img/顔写真3.png" alt="コードが並んでいる画像" />
+                </figure>
+                <p class="bl_card_txt hp_clear">
+                  <span>ア</span
+                  >パレルで独立することが長年の目標でした。でも縫製の知識もまだまだ、どうやって自分が持ってるアイディアを皆に知ってもらおうか…そこが大きな壁でした。<br />
+                  TUCOUREなら頼りになる縫製職人さんに相談しながらイメージを形にできるので、そこが何より良かった点です。自分の作ったアイテムがたくさんの方に喜ばれる嬉しさはひとしお…泣<br />収入としても安定しはじめたので、夢だった開店に向けて、このまま頑張りたいです。
+                </p>
+                <p class="bl_card_detail">みきさん（29）</p>
+              </div>
+              <div class="blank"></div>
+              <!-- ./bl_card_body -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ly_section hp_ptLg hp_pbLg" id="qa">
+        <div class="ly_inner">
+          <!-- <h2 class="el_section_ttl"></h2> -->
+          <img
+            src="/img/質問します！.png"
+            class="el_section_ttl hp_mbLg hp_centering"
+            data-aos="fade-down"
+            data-aos-anchor-placement="top-bottom"
+            alt="QAセクションのタイトル"
+          />
+          <div class="bl_section_wrapper">
+            <ul
+              class="bl_section_list hp_ts"
+              data-aos="fade-right"
+              data-aos-anchor-placement="top-bottom"
+            >
+              <li class="bl_section_item hp_mbLg" id="qa1">
+                <p class="bl_section_q">
+                  <img
+                    src="./img/Q.png"
+                    alt="クエスチョンマーク"
+                    class="q"
+                  />登録費用はかかりますか？
+                </p>
+                <p class="bl_section_a">
+                  <i class="fas fa-ansewr-circle"></i
+                  ><span class="hp_marker"
+                    >登録費用などは一切ございません。</span
+                  >あなたのブランドをサポートいたします。
+                </p>
+              </li>
+              <li class="bl_section_item hp_mbLg" id="qa2">
+                <p class="bl_section_q">
+                  <img
+                    src="./img/Q.png"
+                    alt="クエスチョンマーク"
+                    class="q"
+                  />販売未経験ですが大丈夫でしょうか？
+                </p>
+                <p class="bl_section_a">
+                  まだ新しい市場なので<span class="hp_marker"
+                    >未経験の方がほとんど</span
+                  >です。やる気と時間があれば世界が広がります！
+                </p>
+              </li>
+              <li class="bl_section_item hp_mbLg" id="qa3">
+                <p class="bl_section_q">
+                  <img
+                    src="./img/Q.png"
+                    alt="クエスチョンマーク"
+                    class="q"
+                  />誰でも出品できますか？
+                </p>
+                <p class="bl_section_a">
+                  出品申請が必要になります。通過すれば問題なく出品できます。
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="ly_section hp_ptLg hp_pbLg" id="qa2">
+        <div class="ly_inner">
+          <div class="bl_section_wrapper">
+            <ul
+              class="bl_section_list hp_ts"
+              data-aos="fade-left"
+              data-aos-anchor-placement="top-bottom"
+            >
+              <li class="bl_section_item hp_mbLg" id="qa4">
+                <p class="bl_section_q">
+                  <img
+                    src="./img/Q.png"
+                    alt="クエスチョンマーク"
+                    class="q"
+                  />商品を配送する時に、自分の住所を出す必要ありますか？
+                </p>
+                <p class="bl_section_a">
+                  ツクールでは、<span class="hp_marker"
+                    >住所の貸し出しサービスを無料で提供</span
+                  >しております。
+                </p>
+              </li>
+
+              <li class="bl_section_item hp_mbLg" id="qa5">
+                <p class="bl_section_q">
+                  <img
+                    src="./img/Q.png"
+                    alt="クエスチョンマーク"
+                    class="q"
+                  />梱包や配送手続き手間なので、代行サービスはありますか？
+                </p>
+                <p class="bl_section_a">
+                  ツクールでは<span class="hp_marker"
+                    >配送センターを構えています</span
+                  >ので、配送代行も受け付けています。
+                </p>
+              </li>
+              <li class="bl_section_item hp_mbLg" id="qa6">
+                <p class="bl_section_q">
+                  <img
+                    src="./img/Q.png"
+                    alt="クエスチョンマーク"
+                    class="q"
+                  />プロダクション所属していますが、利用できますか？
+                </p>
+                <p class="bl_section_a">問題なくご利用いただけます。</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="ly_section hp_ptLg hp_pbLg" id="cta">
+        <div class="ly_inner">
+          <!-- <h2 class="el_section_ttl"></h2> -->
+          <div class="bl_section_wrapper hp_jcc hp_flex hp_aic">
+            <figure class="bl_section_img hp_tac">
+              <img
+                src="img/sm-app.png"
+                data-aos="zoom-in"
+                data-aos-anchor-placement="top-bottom"
+                alt="スマホの画像"
+                style="width: 300px"
+              />
+            </figure>
+            <div
+              class="bl_section_body"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+            >
+              <h3 class="bl_section_header hp_mbSm">
+                <img
+                  src="img/TUCOURE_logo__w.png"
+                  class="el_logo el_logo__md"
+                />で<br class="hp_br-tb" />
+                あなたの想いをカタチに。
+              </h3>
+              <img
+                src="/img/ダウンロードはこちら！.png"
+                class="el_section_ttl hp_mbSm"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                data-aos-anchor-placement="bottom-bottom"
+                alt="CTAセクションのタイトル"
+              />
+              <figure class="bl_section_img bl_section_img__sm hp_tac">
+                <img
+                  src="img/sm-app.png"
+                  alt="スマホとアプリ"
+                  style="width: 300px"
+                />
+              </figure>
+              <div class="bl_banner_container">
+                <a href="#" class="el_banner">
+                  <img src="img/appstore.png" alt="AppStoreバナー" />
+                </a>
+                <a href="#" class="el_banner">
+                  <img src="img/googleplay.png" alt="GooglePlayバナー" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="hp_tar hp_ptSm">
+        <div class="ly_inner">
+          <ul class="hp_mb30">
+            <li>利用規約</li>
+            <li>プライバシーポリシー</li>
+            <li>運営会社</li>
+          </ul>
+          <small>Copyright © TUKURU Inc. All rights reserved.</small>
+        </div>
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="./js/script.js"></script>
+      <!-- AOS実装 -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+    </main>
+  </body>
+</html>
